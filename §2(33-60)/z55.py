@@ -1,0 +1,12 @@
+import math
+print ("Задание 55 ")
+a = input("Введите a: ")
+b = input("Введите b: ")
+c = input("Введите c: ")
+d = input("Введите d: ")
+a = float(a)
+b = float(b)
+c = float(c)
+d = float(d)
+if ((a<c) and (b<d)) or ((a<d) and (b<c)): print ("Можно уместить")
+else : print ("Нельзя")
