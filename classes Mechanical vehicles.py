@@ -79,7 +79,7 @@ class Bus(MechanicalVehicle):
     def SetModel(self, m):
         self.model = m   
     def SetCountofSits(self, cs):
-        self.countOfWheels = cw
+        self.countOfSits = cw
     def PrintInfo(self):
         print("\nSize: " + str(self.length) + "x" + str(self.width) + "x" + str(self.height))
         print("Color: " + self.color)
@@ -100,14 +100,14 @@ class Minibus(Bus):
         self.model = m   
     def SetPower(self, mp):
         self.powerOfMotor = mp   
-    def SetCountofWheels(self, cw):
-        self.countOfWheels = cw
+    def SetCountofSits(self, cs):
+        self.countOfSits = cs
     def PrintInfo(self):
         print("\nSize: " + str(self.length) + "x" + str(self.width) + "x" + str(self.height))
         print("Color: " + self.color)
         print("model: " + self.model)
         print("powerOfMotor: " + self.powerOfMotor)
-        print("countOfWheels: " + self.countOfWheels)
+        print("countOfSits: " + self.countOfSits)
 
 isWorking = 1        
 obj = 0
