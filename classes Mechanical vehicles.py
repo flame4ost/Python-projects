@@ -71,25 +71,25 @@ class Bus(MechanicalVehicle):
     def __init__(self, l, w, h, c, m, cw):
         MechanicalVehicle.__init__(self, l, w, h, c)
         self.model = m
-        self.countOfWheels = cw
+        self.countOfSits = cs
 
     def Ride(self):
         print("\nHold steering wheel")
         print("Push pedals\n")
     def SetModel(self, m):
         self.model = m   
-    def SetCountofWheels(self, cw):
+    def SetCountofSits(self, cs):
         self.countOfWheels = cw
     def PrintInfo(self):
         print("\nSize: " + str(self.length) + "x" + str(self.width) + "x" + str(self.height))
         print("Color: " + self.color)
         print("model: " + self.model)
-        print("countOfWheels: " + self.countOfWheels)
+        print("countOfSits: " + self.countOfWheels)
 
 
 class Minibus(Bus):
-    def __init__(self, l, w, h, c, m, cw, mp):
-        Bike.__init__(self, l, w, h, c, m, cw)
+    def __init__(self, l, w, h, c, m, cs, mp):
+        Bus.__init__(self, l, w, h, c, m, cs)
         self.powerOfMotor = mp
 
     def Ride(self):
@@ -150,8 +150,8 @@ while isWorking == 1:
         h = input("Write height: ")
         c = input("Write color: ")
         m = input("Write model: ")
-        cw = input("Write countOfWheels: ")
-        obj = Bike(l, w, h, c, m, cw)
+        cw = input("Write countOfSits: ")
+        obj = Bus(l, w, h, c, m, cs)
                    
     if a == 4:
         l = input("Write length: ")
@@ -159,9 +159,9 @@ while isWorking == 1:
         h = input("Write height: ")
         c = input("Write color: ")
         m = input("Write model: ")
-        cw = input("Write countOfWheels: ")
+        cw = input("Write countOfSits: ")
         mp = input("Write powerOfMotor: ")
-        obj = MotoBike(l, w, h, c, m, cw, mp)
+        obj = MiniBus(l, w, h, c, m, cs, mp)
         
     if a == 5:
         if a != 0:
