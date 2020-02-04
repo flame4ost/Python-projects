@@ -1,11 +1,20 @@
 # Python-projects
 
- OOP-PythonLessons
- 
- Yaroslav Gogulov Volodymirovich
+Python lessons Object Oriented Programming
 
-Student 2nd year CSTU
+Cherkasy State Technological University
+
+Student 2nd year
 
 GROUP PZS-1944
 
-Book Abramov.
+Creator: Yaroslav Gogulov Volodymirovich
+
+Telegram: @lilprescient
+
+The book on which tasks are performed: https://ideafix.name/wp-content/uploads/stuff/book95.pdf
+
+File name: z(task number)
+
+Use for educational purposes
+
