@@ -8,7 +8,7 @@ Student 2nd year
 
 GROUP PZS-1944
 
-Creator: Yaroslav Gogulov Volodymirovich
+Creator: Gogulov Yaroslav Volodymirovich
 
 Telegram: @lilprescient
 
