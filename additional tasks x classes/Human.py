@@ -23,7 +23,8 @@ class Human:
     def getPatron(self):
         print("Patronimic: " + self.patronimic)
     def getAge(self):
-        print("Age: .%2f" % self.age)
+        int(self.age)
+        print("Age: %.2f" % self.age)
     def getGender(self):
         print("Gender: " + self.gender)
 
@@ -54,10 +55,54 @@ class Human:
         print("Name: " + self.name)
         print("Surname: " + self.surname)
         print("Patronimic: " + self.patronimic)
-        print("Age: .%2f" % self.age)
+        print("Age: %.2f" % self.age)
         self.gender = gender
         print("Gender: " + self.gender)
-
+        
+class Apartment:    
+    def __init__(self, number, condition, storey, chambers):
+        """
+        number - номер квартиры
+        condition - состояние кваритры
+        storey  - номер этажа
+        chambers - количество комнат
+        """
+        self.number = number
+        self.storey = storey
+        self.condition = condition
+        self.chambers = chambers
+        self.people = [] # жильцы этой квартиры
+ 
+    def add(self, human):
+        """
+        Метод добавления жильца в квартиру
+        """
+        self.people.append(human)
+    
+ 
+    def __str__(self):
+        res = "number: {}, codition: {}\n".format(self.number, self.condition)
+        for h in self.people:
+            res += str(h) + "\n"
+        return res    
+# добавить квартиры, реализовать метод add, __str__
+class House:  
+    """
+    Это дом в котором живут люди
+    """
+    def __init__(self, number=1, address="BVD Shevchenka"):
+        self.address = address
+        self.number = number
+        self.apart = []
+        
+    def add(self,apartment):
+        self.apart.append(apartment)
+        
+    def __str__(self):
+        res = "house number: {}, address: {}\nappartments: {}\n".format(self.number, self.address, len(self.apart))
+        for h in self.apart:
+            res += str(h) + "\n"
+        return res
 
 def dels():
     print("Destructing")
