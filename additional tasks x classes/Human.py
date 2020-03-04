@@ -4,6 +4,7 @@ class Human:
     patronimic = 's'
     age = 0
     gender = 'm'
+    counter = 0
 
     def setName(self, n):
         self.name = n
@@ -29,8 +30,10 @@ class Human:
         print("Gender: " + self.gender)
 
     @staticmethod
-    def init():
+    def init(self ):
         print("New Human")
+        self.counter += 1
+        Human.counter += 1
     def init(self, name, surname, patron):
         self.name = name
         self.surname = surname
@@ -131,3 +134,4 @@ cl.getAge()
 print("set and get Gender")
 cl.setGender(gender)
 cl.getGender()
+print("Total number of objects created: ", Human.counter )
