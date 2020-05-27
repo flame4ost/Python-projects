@@ -10,7 +10,7 @@ GROUP PZS-1944
 
 Creator: Gogulov Yaroslav Volodymirovich
 
-Telegram: htpps://t.me/flame4ost
+Telegram: https://t.me/flame4ost
 
 The book on which tasks are performed: https://ideafix.name/wp-content/uploads/stuff/book95.pdf
 
